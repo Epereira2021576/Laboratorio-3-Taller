@@ -29,3 +29,17 @@ export const businessGet = async (req, res) => {
   ]);
   res.status(200).json({ total, businesses });
 };
+
+//Put method
+export const businessPut = async (req, res) => {
+  const { id } = req.params;
+  const { _id, state, ...rest } = req.body;
+
+  if (rest.password) {
+    const salt = bcryptjs.genSaltSync();
+    rest.password = bcryptjs.hashSync(rest.password, salt);
+  }
+
+  const business = await Business.findByIdAndUpdate(id, rest, { new: true });
+  res.status(200).json({ business });
+};
