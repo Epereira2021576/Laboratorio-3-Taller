@@ -1,6 +1,29 @@
 import { response, request } from 'express';
 import bcryptjs from 'bcryptjs';
 import User from './user.model.js';
+import { jwtGenerate } from '../helpers/generate-jwt.js';
+
+//Login method for users
+export const userLogin = async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await User.findOne({ where: { email } }); //Find the user
+    if (!user) return response.status(400).json({ msg: 'User not found' }); //If the user is not found
+    if (!user.state)
+      return response
+        .status(400)
+        .json({ msg: 'User deleted from the database' });
+    const passCompare = bcryptjs.compareSync(password, user.password); //Compare the password
+    if (!passCompare)
+      return response.status(400).json({ msg: 'Incorrect password' });
+    const token = await jwtGenerate(user.id); //Generate the token
+    res.status(200).json({ msg: 'Logged In!', user, token });
+  } catch (e) {
+    console.log(e);
+    return res.status(500).json({ msg: 'Error' });
+  }
+};
 
 //Post method
 export const userPost = async (req, res) => {
