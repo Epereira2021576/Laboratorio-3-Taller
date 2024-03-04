@@ -4,6 +4,7 @@ import {
   businessPost,
   businessPut,
   businessGet,
+  businessExcel,
 } from './business.controller.js';
 import {
   businessExists,
@@ -30,6 +31,8 @@ router.post(
 );
 
 router.get('/:orderReference', [validateJWT, validateFields], businessGet);
+
+router.get('/generateReport', [validateJWT, validateFields], businessExcel);
 
 router.put(
   '/:id',

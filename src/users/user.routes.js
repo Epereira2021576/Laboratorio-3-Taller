@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
-import { userPost, userGet } from './user.controller.js';
+import { userPost, userGet, userLogin } from './user.controller.js';
 import { emailExists, userExistsById } from '../helpers/db-validators.js';
 import { validateFields } from '../middlewares/validate-fields.js';
 import { validateJWT } from '../middlewares/validate-jwt.js';
@@ -19,6 +19,17 @@ router.post(
     validateFields,
   ],
   userPost
+);
+
+//Login route
+router.post(
+  '/login',
+  [
+    check('email', 'Invalid email').isEmail(),
+    check('password', 'Password is required').not().isEmpty(),
+    validateFields,
+  ],
+  userLogin
 );
 
 export default router;
