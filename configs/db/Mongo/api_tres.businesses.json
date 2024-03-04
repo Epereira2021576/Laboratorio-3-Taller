@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "65e50e80115def8690e600f2"
+  },
+  "name": "ejemplo",
+  "impactLevel": "bajo",
+  "operationTime": "si",
+  "category": "Tecnologia",
+  "size": "Grandote",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e51122fed138893a7176e2"
+  },
+  "name": "Apple",
+  "impactLevel": "Alto",
+  "operationTime": "28 Años",
+  "category": "Tecnologia",
+  "size": "Muchos empleados",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5115cfed138893a7176e5"
+  },
+  "name": "Zadrik",
+  "impactLevel": "Bajo",
+  "operationTime": "3 Años",
+  "category": "Tecnologia",
+  "size": "500 empleados",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e52d2c69b2fc8001f82b67"
+  },
+  "name": "Babushka",
+  "impactLevel": "Medio",
+  "operationTime": "50 años",
+  "category": "Comida",
+  "size": "50,000 empleados",
+  "state": true,
+  "__v": 0
+}]

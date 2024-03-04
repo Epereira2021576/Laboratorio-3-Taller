@@ -48,13 +48,13 @@ export const businessExcel = async (req, res) => {
     ]);
 
     //Adding the data of each and every business to the created rows
-    businesses.forEach((business) => {
+    businesses.forEach((businessRow) => {
       excelSheet.addRow([
-        business.name,
-        business.impactLevel,
-        business.operationTime,
-        business.category,
-        business.size,
+        businessRow.name,
+        businessRow.impactLevel,
+        businessRow.operationTime,
+        businessRow.category,
+        businessRow.size,
       ]);
     });
 

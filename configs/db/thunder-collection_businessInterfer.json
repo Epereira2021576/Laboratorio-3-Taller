@@ -1,0 +1,104 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "businessInterfer",
+    "dateExported": "2024-03-04T02:09:34.734Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "72ff6120-14fa-405e-8fde-b8620fcedf63",
+            "colId": "bebc9d44-30eb-493e-8e5f-98b9686a99d3",
+            "containerId": "",
+            "name": "businessPost",
+            "url": "http://localhost:3000/businessAPI/v1/business/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T23:52:19.654Z",
+            "modified": "2024-03-04T02:08:42.361Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Babushka\",\n  \"impactLevel\": \"Medio\",\n  \"operationTime\": \"50 años\",\n  \"category\": \"Comida\",\n  \"size\": \"50,000 empleados\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1185f24a-ff6e-4a31-af84-2e6412972998",
+            "colId": "bebc9d44-30eb-493e-8e5f-98b9686a99d3",
+            "containerId": "",
+            "name": "businessGet",
+            "url": "http://localhost:3000/businessAPI/v1/business/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-04T00:00:59.096Z",
+            "modified": "2024-03-04T02:07:05.271Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MGI2YTExMzg4NjAzMmY2ZmI4ZjgiLCJpYXQiOjE3MDk1MTgwMTIsImV4cCI6MTcwOTUyMTYxMn0.Qg1EMjQfB4ajnAd7GEnDONpCgvjAqZhq6w9jm3ZOxs8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fe5ecd28-a33a-43d7-a7b0-78c9c55529d2",
+            "colId": "bebc9d44-30eb-493e-8e5f-98b9686a99d3",
+            "containerId": "",
+            "name": "businessReport",
+            "url": "http://localhost:3000/businessAPI/v1/report/generateReport",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-04T00:11:57.513Z",
+            "modified": "2024-03-04T01:52:11.912Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MGI2YTExMzg4NjAzMmY2ZmI4ZjgiLCJpYXQiOjE3MDk1MTQ2NzcsImV4cCI6MTcwOTUxODI3N30.APrz_BP7AIZstScRLmQle-5mmOIQf7heZasjAFPiVU0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9413c950-feaf-4b41-961f-a3a006994c37",
+            "colId": "bebc9d44-30eb-493e-8e5f-98b9686a99d3",
+            "containerId": "",
+            "name": "businessOrder",
+            "url": "http://localhost:3000/businessAPI/v1/business/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-04T01:15:04.238Z",
+            "modified": "2024-03-04T01:55:24.476Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MGI2YTExMzg4NjAzMmY2ZmI4ZjgiLCJpYXQiOjE3MDk1MTQ2NzcsImV4cCI6MTcwOTUxODI3N30.APrz_BP7AIZstScRLmQle-5mmOIQf7heZasjAFPiVU0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dd36f8db-f485-442e-aa54-f4d016477662",
+            "colId": "bebc9d44-30eb-493e-8e5f-98b9686a99d3",
+            "containerId": "",
+            "name": "businessPut",
+            "url": "http://localhost:3000/businessAPI/v1/business/65e50e80115def8690e600f2",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-04T02:02:11.269Z",
+            "modified": "2024-03-04T02:07:29.135Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"ejemplo\",\r\n  \"impactLevel\": \"bajo\",\r\n  \"operationTime\": \"si\",\r\n  \"category\": \"Tecnologia\",\r\n  \"size\": \"Grandote\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

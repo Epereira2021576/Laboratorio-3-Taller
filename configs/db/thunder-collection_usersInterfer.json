@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "usersInterfer",
+    "dateExported": "2024-03-04T02:09:13.021Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bb758b92-778c-40a5-87c0-080d5ae45538",
+            "colId": "80465818-72f2-46fc-a15c-515bd7a201b8",
+            "containerId": "",
+            "name": "userPost",
+            "url": "http://localhost:3000/businessAPI/v1/users/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T23:42:38.759Z",
+            "modified": "2024-03-03T23:44:43.070Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Edson\",\n  \"email\": \"edson@gmail.com\",\n  \"password\": \"eskere123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "222412cc-41c5-4959-8a55-9433b6bc0489",
+            "colId": "80465818-72f2-46fc-a15c-515bd7a201b8",
+            "containerId": "",
+            "name": "userLogin",
+            "url": "http://localhost:3000/businessAPI/v1/users/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T23:45:06.069Z",
+            "modified": "2024-03-03T23:49:16.302Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"edson@gmail.com\",\n  \"password\": \"eskere123\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
